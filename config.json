@@ -3,7 +3,7 @@
     "tx": {
       "transfer": {
         "type": "transfer",
-        "prefix": "cosmos-sdk/MsgSend"
+        "prefix": "irishub/bank/Send"
       },
       "delegate": {
         "type": "delegate",
@@ -27,7 +27,7 @@
       },
       "stdTx": {
         "type": "",
-        "prefix": "cosmos-sdk/StdTx"
+        "prefix": "irishub/bank"
       }
     },
     "mode": {
