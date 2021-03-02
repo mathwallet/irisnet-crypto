@@ -3,7 +3,7 @@
     "tx": {
       "transfer": {
         "type": "transfer",
-        "prefix": "irishub/bank/Send"
+        "prefix": "cosmos-sdk/MsgSend"
       },
       "delegate": {
         "type": "delegate",
@@ -27,7 +27,7 @@
       },
       "stdTx": {
         "type": "",
-        "prefix": "irishub/bank/StdTx"
+        "prefix": "cosmos-sdk/StdTx"
       }
     },
     "mode": {
@@ -55,6 +55,58 @@
       "cipherAlg": "aes-128-ctr",
       "c": 262144
     }
+  },
+  "iris2": {
+    "tx": {
+      "transfer": {
+        "type": "transfer",
+        "prefix": "cosmos-sdk/MsgSend"
+      },
+      "delegate": {
+        "type": "delegate",
+        "prefix": "cosmos-sdk/MsgDelegate"
+      },
+      "undelegate": {
+        "type": "undelegate",
+        "prefix": "cosmos-sdk/MsgUndelegate"
+      },
+      "beginRedelegate": {
+        "type": "begin_redelegate",
+        "prefix": "cosmos-sdk/MsgBeginRedelegate"
+      },
+      "setWithdrawAddress": {
+        "type": "set_withdraw_address",
+        "prefix": "cosmos-sdk/MsgModifyWithdrawAddress"
+      },
+      "withdrawDelegatorReward": {
+        "type": "withdraw_delegation_reward",
+        "prefix": "cosmos-sdk/MsgWithdrawDelegationReward"
+      },
+      "withdrawValidatorCommission": {
+        "type": "withdraw_validator_commission",
+        "prefix": "cosmos-sdk/MsgWithdrawValidatorCommission"
+      },
+      "stdTx": {
+        "type": "stdTx",
+        "prefix": "cosmos-sdk/StdTx"
+      }
+    },
+    "bech32": {
+      "accAddr": "iaa",
+      "valAddr": "iva",
+      "accPub": "iap"
+    },
+    "defaultCoding": "bech32",
+    "coding": {
+      "bech32": "bech32",
+      "hex": "hex"
+    },
+    "maxGas": 20000000,
+    "amino": {
+      "signature": "tendermint/SignatureSecp256k1",
+      "pubKey": "tendermint/PubKeySecp256k1"
+    },
+    "bip39Path": "44'/118'/0'/0/0"
   },
   "cosmos": {
     "tx": {
@@ -168,6 +220,7 @@
   },
   "chain": {
     "iris": "iris",
+    "iris2": "iris2",
     "ethermint": "ethermint",
     "cosmos": "cosmos",
     "hashgard": "hashgard"

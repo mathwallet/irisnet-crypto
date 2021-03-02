@@ -55,6 +55,9 @@ class Builder {
             case Config.chain.iris: {
                 return require('./chains/iris/builder')();
             }
+            case Config.chain.iris2: {
+                return require('./chains/iris2/builder')();
+            }
             case Config.chain.ethermint: {
                 return require('./chains/ethermint/ethermint_builder')();
             }

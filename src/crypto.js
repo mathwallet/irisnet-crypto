@@ -94,6 +94,9 @@ class Crypto {
             case Config.chain.iris: {
                 return require('./chains/iris/crypto')();
             }
+            case Config.chain.iris2: {
+                return require('./chains/iris2/crypto')();
+            }
             case Config.chain.ethermint: {
                 return require('./chains/ethermint/ethermint_crypto')();
             }
